@@ -1,0 +1,56 @@
+<head>
+</head>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>ZSHARE - 無料サービス団体</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="1.css" />
+<meta property="og:description" content="学生の味方！無料サービスを展開するZSHAREのメインページ！・マインクラフトをこのページでプレイできます！">
+<meta property="og:title" content="ZSHARE /PlayerWorld/Zarc+V/">
+<meta property="og:image" content="https://zpw.jp/home.png">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="315">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zpw.jp/">
+<link rel="shortcut icon" href="https://minecraft--duck132912.repl.co/icon.png" type="image/x-icon" />
+<link rel="icon" href="https://minecraft--duck132912.repl.co/icon.png" type="image/x-icon" />
+</head>
+<body translate="no" onpageshow="updateidea();">
+<script src="https://minecraft--duck132912.repl.co/script.js">
+    </script>
+<link rel="stylesheet" type="text/css" href="2.css">
+<img alt="Minecraft" id="logo" src="https://minecraft--duck132912.repl.co/minecraft.svg" />
+<div id="flashingtext">ZSHARE! PlayerWorld!</div>
+<main>
+<button class="button" onclick="play()">シングルプレイ</button>
+<br>
+<button class="button" onclick="location.href='https://zelayed.zpw.jp'">Zelay</button>
+<button class="button" onclick="location.href='https://fss.zpw.jp'">FastServer</button>
+<button class="button" onclick="location.href='https://dash.zpw.jp'">PlayerWorld</button>
+<audio id="audio">
+<source src="mc.mp3">
+</audio>
+<button id="button" class="button">音楽を再生</button>
+<button class="button button_small left" onclick="location.href='https://www.youtube.com/channel/UCZmez9Et0bvDV7zFTiZxB4Q'">YouTube</button>
+<button class="button button_small right" onclick="location.href='https://twitter.com/ZEROServer1814'">Twitter</button>
+<script src="https://minecraft--duck132912.repl.co/minecraft.js"></script>
+<script type="text/javascript">
+
+var button = document.getElementById("button");
+var audio = document.getElementById("audio");
+button.addEventListener("click", function(){
+  if(audio.paused){
+    audio.play();
+    button.innerHTML = "音楽を停止";
+  } else {
+    audio.pause();
+    button.innerHTML = "音楽を再生";
+}
+});
+</script>
+</main>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"74cf1479cf9ee072","version":"2022.8.1","r":1,"token":"9a56898cfc1b4c14a0391ec952e0af28","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
